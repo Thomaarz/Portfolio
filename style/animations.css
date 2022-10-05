@@ -1,0 +1,27 @@
+
+/* REVEAL ON SCROLLING */
+.reveal {
+    transform: translateX(-500px);
+    opacity: 0;
+
+    transition: all .5s ease-in-out;
+}
+.header-reveal {
+    transform: translateX(-500px);
+    opacity: 0;
+
+    transition: all .5s ease-in-out;
+}
+.text-reveal {
+    transition: all .5s ease-in-out;
+}
+.active {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
+
+/* ELEMENTS */
+.moveable {
+    position: fixed;
+    z-index: -1;
+}

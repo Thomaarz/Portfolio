@@ -1,0 +1,84 @@
+
+/* FONT SIZE */
+.medium {
+    font-size: 1.2em;
+}
+.big-0 {
+    font-size: 1.5em;
+}
+.big-1 {
+    font-size: 1.9em;
+}
+.big-2 {
+    font-size: 2.5em;
+}
+.big-3 {
+    font-size: 3.5em;
+}
+
+/* FONT TRANSFORM */
+.bold {
+    font-weight: bold;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.undecorated {
+    text-decoration: none;
+}
+.underline {
+    text-decoration: underline;
+}
+.shadow-white {
+    text-shadow: 0 0 10px #F5F5F5;
+}
+.shadow-black {
+    text-shadow: 0 0 5px #404040;
+}
+
+
+/* FONT COLOR */
+.white {
+    color: #F5F5F5;
+}
+.gray {
+    color: #3e3e3e;
+}
+.black {
+    color: #161616;
+}
+.lime {
+    color: #09f755;
+}
+.green {
+    color: #08cb47;
+}
+
+/* BG COLOR */
+.bg-white {
+    background-color: #F5F5F5;
+}
+.bg-gray {
+    background-color: #7e7e7e;
+}
+.bg-black {
+    background-color: #161616;
+}
+
+/* TEXT */
+.text {
+    max-width: 55%;
+}
+.title {
+    transition: all .5s ease-in-out;
+}
+
+/* MEDIA */
+@media (max-width: 1000px) {
+    .text {
+        max-width: 90%;
+    }
+}

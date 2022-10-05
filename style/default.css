@@ -1,0 +1,23 @@
+
+/* FONTS */
+@font-face {
+    font-family: BrokenHome;
+    src: url("font/fontBroken.otf") format("opentype");
+}
+@font-face {
+    font-family: LouisGeorge;
+    src: url("font/fontLouis.ttf") format("opentype");
+}
+
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
+}
+body {
+    font-family: LouisGeorge, 'Courier New', sans-serif;
+    margin: auto;
+
+    background-color: #bebebe;
+
+}

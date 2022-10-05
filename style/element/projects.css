@@ -1,0 +1,31 @@
+
+
+.projects-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.projects-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.box-animate {
+    margin: 25px;
+}
+
+@media (max-width: 1400px) {
+    .projects-column {
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .box-animate {
+        padding: 5px;
+    }
+}
+@media (max-width: 700px) {
+    .projects-row {
+        flex-direction: column;
+    }
+}

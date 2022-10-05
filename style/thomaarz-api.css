@@ -1,0 +1,104 @@
+
+/*********************
+*   API = 1
+*   NAME = glass
+*   TYPE = nav
+*   DATE = 27/10/2021
+**********************/
+.nav-glass {
+    display: flex;
+}
+.nav-link-glass {
+    position: relative;
+    overflow: hidden;
+
+    text-decoration: none;
+    text-align: center;
+
+    padding: 20px;
+
+    color: #F5F5F5;
+    background: rgba(81, 81, 81, 0.2);
+
+    border: solid 1px #F5F5F5;
+    border-radius: 10px;
+
+    transition: all .2s ease-in-out;
+}
+.nav-link-glass img {
+    width: 40px;
+}
+
+.nav-link-glass::before {
+    content: '';
+
+    position: absolute;
+    top: 0; left: 0;
+
+    height: 100%;
+    width: 30%;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    transform: skewX(150deg) translateX(500%);
+    transition: all .6s ease-in-out;
+}
+.nav-link-glass:hover {
+    transform: translate(10px, -10px);
+}
+.nav-link-glass:hover::before {
+    transform: skewX(45deg) translateX(-250%);
+}
+
+/*********************
+*   API = 2
+*   NAME = box animation
+*   TYPE = box
+*   DATE = 28/10/2021
+**********************/
+.box-animate {
+    background-color: rgba(81, 81, 81, 0.5);
+    border: solid 1px rgba(255, 255, 255, 0.3);
+
+    border-radius: 15px;
+
+    width: 240px;
+
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all .5s ease-in-out;
+}
+.box-animate-img {
+    height: 180px;
+
+    transition: all .5s ease-in-out;
+}
+.box-animate-textbox {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    max-height: 0;
+
+    width: 92%;
+
+    transition: all .4s ease-in-out;
+}
+.box-animate-element {
+    transition: all .5s ease-in-out;
+}
+
+.box-animate:hover .box-animate-textbox {
+    max-height: 500px;
+}
+.box-animate:hover .box-animate-img {
+    margin: -50px;
+    transform: translate(0, -50px) rotate(-15deg) scale(1.1);
+}

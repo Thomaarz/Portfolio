@@ -1,0 +1,26 @@
+header {
+    margin-left: 75px;
+    padding: 5%;
+
+    min-height: 600px;
+}
+
+#header-img {
+    background: url("../../images/home_dark.png") no-repeat;
+    background-size: contain;
+
+    top: 30%;
+    right: 30%;
+
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width: 800px) {
+    #header-img {
+        width: 40%;
+        height: 40%;
+
+        right: 10%;
+    }
+}

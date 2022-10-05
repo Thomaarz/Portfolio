@@ -1,0 +1,59 @@
+/* MAIN ELEMENT */
+#modal-navigation {
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+
+    top: 0; left: 0;
+    width: 0%;
+    height: 100%;
+
+    opacity: 1;
+
+    transition: all .8s ease-in-out;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NAV */
+#modal-navigation-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10%;
+}
+
+/* NAV LINK */
+.modal-navigation-link {
+    margin: 5%;
+
+    transition: all .5s ease-in-out;
+}
+.modal-navigation-link:hover {
+    text-decoration: underline;
+}
+
+/* IMG HIDE MODAL */
+#hide-modal-navigation-btn {
+    position: fixed;
+    left: 15px;
+}
+
+#hide-modal-navigation-img {
+    width: 50px;
+    transition: all .1s ease-in-out;
+
+    filter: brightness(1);
+    transform: translateY(10px) rotate(90deg);
+}
+#hide-modal-navigation-img:hover {
+    filter: brightness(0.5);
+    transform: translateY(0) rotate(0deg);
+}
+
+

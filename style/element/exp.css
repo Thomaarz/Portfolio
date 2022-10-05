@@ -1,0 +1,133 @@
+
+/* MAIN */
+#experience .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+
+    color: #F5F5F5;
+    box-shadow: 0 0 30px #161616;
+}
+#experience .content .line {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+#experience .content .line .exp-box {
+    padding: 15px;
+
+    overflow: hidden;
+
+    display: flex;
+}
+#experience .content .line .exp-box-title  {
+    margin: 0;
+}
+
+/* TOP */
+#experience .content .top .exp-box {
+    height: 650px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#experience .content .top .left {
+    background-color: #4c4c4c;
+}
+#experience .content .top .right {
+    background-color: #606060;
+}
+
+/* BOTTOM */
+#experience .content .bottom .mid {
+    background-color: #6d6d6d;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+/* ETUDES */
+
+/* COMPETENCES */
+#competences-all {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 20px;
+}
+.competence-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+    margin: 20px;
+    padding: 5px 20px;
+
+    border-radius: 20px;
+    background-color: #545454;
+
+    transition: all .5s ease-in-out;
+}
+.competence-box-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+}
+.competence-box-element p {
+    margin: 10px;
+}
+
+
+/* OTHER */
+
+/* IMAGES */
+.img-star {
+    width: 25px;
+}
+#img-etudes {
+    width: 40%;
+    margin: 10% 30%;
+}
+
+/* HOVER */
+#experience .content .line .exp-box:hover .exp-box-title {
+    transform: translateX(20px);
+}
+#competences-box:hover .competence-box {
+    transform: scale(1.15);
+    border-radius: 0;
+}
+#experience .content .top .left:hover .exp-element-hover {
+    transform: scale(1.1);
+}
+
+/* MEDIA */
+@media (max-width: 1200px) {
+    #experience .content .top {
+        flex-direction: column;
+    }
+    #experience .content .line .exp-box {
+        width: initial;
+        height: initial;
+    }
+}
+@media (max-width: 600px) {
+    .competence-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
